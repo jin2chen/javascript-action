@@ -9,8 +9,6 @@ on:
 env:
   AFTER_BUILD: |
     echo 'a'
-    echo 'b'
-    echo 'c'
 
 jobs:
   # unit tests
