@@ -14,5 +14,4 @@ jobs:
   units:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-      ${{ env.AFTER_BUILD }}
+    - run: ${{ env.AFTER_BUILD }}
