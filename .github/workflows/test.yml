@@ -7,11 +7,13 @@ on:
       - 'releases/*'
 
 env:
-  AFTER_BUILD: echo 'a'
+  AFTER_BUILD: |
+    echo 'a'
+    echo 'b'
 
 jobs:
   # unit tests
   units:
     runs-on: ubuntu-latest
     steps:
-    - run: ${{ env.AFTER_BUILD }}
+    - run: echo "${{ env.AFTER_BUILD }}"
