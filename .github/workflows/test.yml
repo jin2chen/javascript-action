@@ -16,4 +16,4 @@ jobs:
   units:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "${{ env.AFTER_BUILD }}"
+    - run: eval "${{ env.AFTER_BUILD }}"
