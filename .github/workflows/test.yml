@@ -7,8 +7,7 @@ on:
       - 'releases/*'
 
 env:
-  AFTER_BUILD: |
-    echo 'a'
+  AFTER_BUILD: echo 'a'
 
 jobs:
   # unit tests
