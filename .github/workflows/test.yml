@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-      echo ${{ env.AFTER_BUILD }}
+      ${{ env.AFTER_BUILD }}
